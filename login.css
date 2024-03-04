@@ -1,0 +1,217 @@
+label,
+input,
+button,
+span,
+p {
+    font-family: SourceSansPro-Regular, sans-serif !important;
+}
+
+#screen-one {
+    justify-content: center;
+    align-items: center;
+    background: white;
+    /* height: 100vh; */
+    height: 100%;
+}
+
+#emailInput {
+    width: 100%;
+}
+
+.screen-one {
+    background: #025064;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 2em;
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-column img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Espacio entre las imágenes */
+  }
+
+.screen-one .logo {
+    margin-top: -3em;
+}
+
+.login-description {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+div.email,
+div.password {
+    padding-left: 20px 10px 20px 10px !important;
+    font-weight: bold;
+    width: 200px;
+    border-bottom: #0d6b9e 1.5px solid;
+
+}
+
+input.pas {
+    width: 85%;
+}
+
+.screen-one .email {
+    background: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    color: gray;
+    margin-top: -3em;
+}
+
+.screen-one .email input {
+    outline: none;
+    border: none;
+}
+
+.screen-one .email input::placeholder {
+    font-family: "SourceSansPro-Regular", sans-serif !important;
+    color: gray;
+    font-size: 12px;
+}
+
+.screen-one .email i {
+    color: gray;
+    margin-bottom: -0.2em;
+}
+
+.screen-one .password {
+    background: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    color: gray;
+}
+
+.screen-one .password input {
+    outline: none;
+    border: none;
+}
+
+.screen-one label {
+    font-family: "SourceSansPro-Regular", sans-serif !important;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.screen-one .password input::placeholder {
+    font-family: "SourceSansPro-Regular", sans-serif !important;
+    color: gray;
+    font-size: 12px;
+}
+
+.screen-one .password i {
+    color: gray;
+    margin-bottom: -0.2em;
+}
+
+.screen-one .password .show-hide {
+    margin-right: -5em;
+}
+
+.screen-one .logo-title {
+    display: flex;
+    justify-content: center;
+    padding: 35px 10px;
+    flex-direction: column;
+}
+
+.screen-one .logo-title img {
+    width: 80px;
+    align-self: center;
+}
+
+.screen-one .logo-title p {
+    align-self: center;
+    font-size: 11px;
+    color: black;
+    max-width: 300px;
+}
+
+.screen-one .login {
+    font-family: SourceSansPro-Regular, sans-serif;
+    font-weight: normal;
+    padding: 1em;
+    background: #0d6b9e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    min-width: 230px;
+}
+
+.screen-one .footer {
+    display: flex;
+    justify-content: center;
+    font-size: 0.7em;
+    color: #5e5e5e;
+    gap: 14em;
+    padding-bottom: 10em;
+}
+
+.screen-one .footer span {
+    cursor: pointer;
+    color: #118ed1;
+}
+
+button,
+i {
+    cursor: pointer;
+}
+
+
+button.login:hover {
+    background: #118ed1 !important;
+    color: white !important;
+}
+
+.hide {
+    display: none;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#overlay {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    height: 55vh;
+    min-width: 300px;
+    width: 400px;
+}
