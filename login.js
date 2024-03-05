@@ -10,7 +10,7 @@ class LoginElement extends HTMLElement {
         // Agregar estilos específicos para el widget
         const cssStyleSheet = document.createElement('link');
         cssStyleSheet.rel = 'stylesheet';
-        cssStyleSheet.href = './login.css';
+        cssStyleSheet.href = 'https://christiananderson.github.io/widget-login-test/login.css';
         shadowRoot.appendChild(cssStyleSheet);
         shadowRoot.innerHTML += `
         <!-- Widget Custom Content -->
