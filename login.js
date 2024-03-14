@@ -7,7 +7,6 @@ class LoginElement extends HTMLElement {
         fontAwesomeLink.rel = 'stylesheet';
         fontAwesomeLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css';
         document.head.appendChild(fontAwesomeLink);
-        // Agregar estilos específicos para el widget
         const cssStyleSheet = document.createElement('link');
         cssStyleSheet.rel = 'stylesheet';
         cssStyleSheet.href = 'https://christiananderson.github.io/widget-login-test/login.css';
@@ -19,8 +18,6 @@ class LoginElement extends HTMLElement {
         crossorigin="anonymous" referrerpolicy="no-referrer" />
             <div id="screen-one" class="screen-one">
                 <div class="logo-title">
-                    <p class="login-description">Please enter your account information in the fields below to log in to the WebShop,
-                    powered by Epicor application.</p>
                     <p id="email-validation" class="hide" style="color:black">The email address or password is incorrects.</p>
                 </div>
 
@@ -62,7 +59,6 @@ class LoginElement extends HTMLElement {
         }
 
         function validatePassword(password) {
-            // Add your password validation logic here
             return password.length >= 6;
         }
 
@@ -87,7 +83,7 @@ class LoginElement extends HTMLElement {
                     username: email,
                     password: password
                 }
-                // Simulate a login API call
+                // Login API call
                 try {
                     const response = await fetch(url, {
                         method: 'POST',
